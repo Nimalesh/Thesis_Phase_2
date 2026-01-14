@@ -4,30 +4,55 @@ This repository contains the complete implementation and results of Thesis Phase
 The project documents the transition from a baseline model to a highly optimized final architecture designed to handle diagnostic complexity and data scarcity in breast cancer imaging.
 
 ## Repository Structure
-Thesis_Phase_2/
--data/dataset/ - 3 subfolders for 3 classes
--models/
---class_imbalance.py
---generic_model.py
---layers.py
---
-Dual_Aug_Net/
-├── data/dataset/
-├── models/
-│   ├── advanced_modules.py
-│   ├── decoders.py
-│   ├── generic_model.py
-│   └── class_imbalance.py
-├── utils/
-│   ├── dataset.py
-│   ├── losses.py
-│   └── metrics.py
-├── config.py
-├── run_experiments.py
-├── run_experiments_decoders.py
-├── run_class_experiments.py
-└── predict.py
 
+```
+THESIS_PHASE_2/
+├── checkpoints/
+│   └── model/                           # Saved trained model weights
+├── dataset/                             # Dataset directory
+│   ├── benign/                          # Benign breast images
+│   ├── malignant/                       # Malignant breast images
+│   └── normal/                          # Normal breast images
+├── experiment_logs/                     # Logged experiment results
+│   ├── all_encoder_results.csv          # Encoder comparison results
+│   └── b6_decoder_experiment_results.csv# Decoder experiment results
+├── experiments/                         # Experimental modules
+│   ├── class_imbalance_module.py        # Class imbalance handling logic
+│   ├── decoder.py                      # Decoder architectures
+│   └── encoders.py                     # Encoder architectures
+├── models/                              # Core model implementations
+│   ├── __init__.py
+│   ├── class_imbalance.py               # Loss weighting & imbalance handling
+│   ├── generic_model.py                 # Encoder–decoder base model
+│   ├── layers.py                        # Custom neural network layers
+│   ├── multitask.py                     # Multi-task model (segmentation + classification)
+│   └── multitask_decoder_exp.py         # Decoder experimentation logic
+├── utils/                               # Utility functions
+│   ├── __init__.py
+│   ├── dataset.py                       # Dataset loader & preprocessing
+│   ├── losses.py                        # Custom loss functions
+│   └── metrics.py                       # Evaluation metrics
+│
+├── .gitattributes                       # Git attributes configuration
+├── .gitignore                           # Files/folders ignored by Git
+│
+├── b6_decoder_experiment_results.csv    # Standalone decoder results
+│
+├── config.py                            # Global configuration & hyperparameters
+├── train.py                             # Model training pipeline
+├── predict.py                           # Inference & prediction script
+│
+├── run_experiments.py                   # Main experiment runner
+├── run_experiments_decoders.py          # Decoder-specific experiments
+├── run_class_experiments.py             # Classification-only experiments
+│
+├── prediction_output.png                # Sample prediction visualization
+├── test1.png                            # Sample test image
+│
+├── requirements.txt                     # Python dependencies
+└── README.md                            # Project documentation
+
+```
 ## Installation & Setup
 
 ### Clone and Install:
