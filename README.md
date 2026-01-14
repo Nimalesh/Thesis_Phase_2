@@ -10,47 +10,42 @@ THESIS_PHASE_2/
 ├── checkpoints/
 │   └── model/                           # Saved trained model weights
 ├── dataset/                             # Dataset directory
-│   ├── benign/                          # Benign breast images
-│   ├── malignant/                       # Malignant breast images
-│   └── normal/                          # Normal breast images
+│   ├── benign/                          
+│   ├── malignant/                       
+│   └── normal/                          
 ├── experiment_logs/                     # Logged experiment results
-│   ├── all_encoder_results.csv          # Encoder comparison results
-│   └── b6_decoder_experiment_results.csv# Decoder experiment results
-├── experiments/                         # Experimental modules
-│   ├── class_imbalance_module.py        # Class imbalance handling logic
-│   ├── decoder.py                      # Decoder architectures
-│   └── encoders.py                     # Encoder architectures
-├── models/                              # Core model implementations
+│   ├── all_encoder_results.csv          
+│   └── b6_decoder_experiment_results.csv
+├── experiments/                         
+│   ├── class_imbalance_module.py        
+│   ├── decoder.py                      
+│   └── encoders.py                     
+├── models/                              
 │   ├── __init__.py
-│   ├── class_imbalance.py               # Loss weighting & imbalance handling
-│   ├── generic_model.py                 # Encoder–decoder base model
-│   ├── layers.py                        # Custom neural network layers
-│   ├── multitask.py                     # Multi-task model (segmentation + classification)
-│   └── multitask_decoder_exp.py         # Decoder experimentation logic
+│   ├── class_imbalance.py               
+│   ├── generic_model.py                 
+│   ├── layers.py                        
+│   ├── multitask.py                     
+│   └── multitask_decoder_exp.py         
 ├── utils/                               # Utility functions
 │   ├── __init__.py
-│   ├── dataset.py                       # Dataset loader & preprocessing
-│   ├── losses.py                        # Custom loss functions
-│   └── metrics.py                       # Evaluation metrics
+│   ├── dataset.py                       
+│   ├── losses.py                        
+│   └── metrics.py                      
+├── .gitattributes                       
+├── .gitignore                           
+├── config.py                            
+├── train.py                             
+├── predict.py                           
 │
-├── .gitattributes                       # Git attributes configuration
-├── .gitignore                           # Files/folders ignored by Git
+├── run_experiments.py                   
+├── run_experiments_decoders.py          
+├── run_class_experiments.py             
 │
-├── b6_decoder_experiment_results.csv    # Standalone decoder results
-│
-├── config.py                            # Global configuration & hyperparameters
-├── train.py                             # Model training pipeline
-├── predict.py                           # Inference & prediction script
-│
-├── run_experiments.py                   # Main experiment runner
-├── run_experiments_decoders.py          # Decoder-specific experiments
-├── run_class_experiments.py             # Classification-only experiments
-│
-├── prediction_output.png                # Sample prediction visualization
-├── test1.png                            # Sample test image
-│
-├── requirements.txt                     # Python dependencies
-└── README.md                            # Project documentation
+├── prediction_output.png                
+├── test1.png                            
+├── requirements.txt                     
+└── README.md                            
 
 ```
 ## Installation & Setup
