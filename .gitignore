@@ -1,0 +1,18 @@
+
+*.pth
+checkpoints/
+
+checkpoints/
+*.pth
+data/
+__pycache__/
+
+# data/
+# *.png
+# *.jpg
+
+
+__pycache__/
+*.csv
+experiment_logs/
+.DS_Store

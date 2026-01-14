@@ -1,0 +1,18 @@
+# Core Data Science
+numpy
+pandas
+Pillow
+scipy
+
+# Computer Vision
+opencv-python
+matplotlib
+seaborn
+
+# Machine Learning & Deep Learning
+torch
+torchvision
+scikit-learn
+
+# Progress bars and utilities
+tqdm
