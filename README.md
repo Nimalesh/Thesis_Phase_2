@@ -3,6 +3,14 @@
 This repository contains the complete implementation and results of Thesis Phase 2, focused on developing a high-performance Joint Classification and Segmentation architecture for breast ultrsond image.
 The project documents the transition from a baseline model to a highly optimized final architecture designed to handle diagnostic complexity and data scarcity in breast cancer imaging.
 
+Master’s Thesis
+
+Programme: M.Tech in Data Science and AI
+Student Name: Nimalesh
+University: IIT Madras
+Supervisor: Dr. Tushar Shinde
+Academic Year: 2025–2026
+
 ## Repository Structure
 
 ```
