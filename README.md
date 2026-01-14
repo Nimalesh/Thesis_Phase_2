@@ -4,22 +4,29 @@ This repository contains the complete implementation and results of Thesis Phase
 The project documents the transition from a baseline model to a highly optimized final architecture designed to handle diagnostic complexity and data scarcity in breast cancer imaging.
 
 ## Repository Structure
+Thesis_Phase_2/
+-data/dataset/ - 3 subfolders for 3 classes
+-models/
+--class_imbalance.py
+--generic_model.py
+--layers.py
+--
 Dual_Aug_Net/
-├── data/dataset/                # Data subfolders: benign/, malignant/, normal/
+├── data/dataset/
 ├── models/
-│   ├── advanced_modules.py      # FFT Bottleneck & Latent Augmentor logic
-│   ├── decoders.py              # UNet, UNet++, and DeepLabV3+ architectures
-│   ├── generic_model.py         # Flexible model for encoder benchmarking
-│   └── class_imbalance.py       # Final Advanced Model (B6 + FFT + LatentAug)
+│   ├── advanced_modules.py
+│   ├── decoders.py
+│   ├── generic_model.py
+│   └── class_imbalance.py
 ├── utils/
-│   ├── dataset.py               # Medical dataset loading & augmentation
-│   ├── losses.py                # DiceFocal and Weighted Cross-Entropy losses
-│   └── metrics.py               # DSC, NSD, HD95, AUC, and F1 calculations
-├── config.py                    # Global hyperparameters and path settings
-├── run_experiments.py           # Experiment 1: Benchmarking 20+ Encoders
-├── run_experiments_decoders.py  # Experiment 2: Benchmarking Decoders
-├── run_class_experiments.py     # Experiment 3: Final Advanced Training
-└── predict.py                   # CLI Tool for single-image inference
+│   ├── dataset.py
+│   ├── losses.py
+│   └── metrics.py
+├── config.py
+├── run_experiments.py
+├── run_experiments_decoders.py
+├── run_class_experiments.py
+└── predict.py
 
 ## Installation & Setup
 
